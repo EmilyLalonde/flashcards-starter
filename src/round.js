@@ -1,12 +1,20 @@
 class Round {
-  constructor(cards, deck) {
-    this.cards = cards;
+  constructor(deck) {
     this.deck = deck;
+    this.currentCard;
+    this.turn = 0;
+    this.incorrectGuesses = [];
   }
   returnCurrentCard() {
-    return this.deck;
+    this.currentCard = this.deck.cards[0];
+    return this.currentCard;
   }
   takeTurn() {
+    this.turn++;
+  }
+  calculatePercentCorrect() {
+  }
+  endRound() {
   }
 }
 

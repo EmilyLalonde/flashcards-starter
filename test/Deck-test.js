@@ -22,7 +22,7 @@ describe('Deck', function() {
     const card3 = new Card(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
 
     const deck = new Deck([card1, card2, card3]);
-    deck.countCards();
-    expect(deck.countCards()).to.equal(3);
+    var countCards = deck.countCards();
+    expect(countCards).to.equal(3);
   });
 });
