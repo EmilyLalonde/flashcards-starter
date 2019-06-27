@@ -15,7 +15,7 @@ class Game {
     const round = new Round(deck);
     this.currentRound++;
     this.printMessage(deck);
-    this.printQuestion(round);
+    this.printQuestion(round);1
   }
 
   printMessage(deck, round) {
