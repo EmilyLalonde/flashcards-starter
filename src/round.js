@@ -1,11 +1,12 @@
 const Turn = require('../src/Turn');
 
 class Round {
-  constructor(deck) {
+  constructor(deck, game) {
     this.deck = deck;
     this.currentCard;
     this.turn = 0;
     this.incorrectGuesses = [];
+    this.game = game;
   }
   returnCurrentCard() {
     this.currentCard = this.deck.cards[this.turn];
